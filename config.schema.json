@@ -1,15 +1,32 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
-  "pluginType": "platform",
-  "singular": true,
+  "pluginAlias": "HomebridgeSwitchButton",
+  "pluginType": "accessory",
+  "singular": false,
+  "@footerDisplay": "Created by @sant3001",
   "schema": {
     "type": "object",
     "properties": {
       "name": {
-        "title": "Name",
+        "title": "Accessory Name",
         "type": "string",
-        "required": true,
-        "default": "Example Dynamic Platform"
+        "required": true
+      },
+      "delay": {
+        "title": "Delay Time in Milliseconds",
+        "description": "Amount of time in milliseconds to wait since the switch is turned ON until the switch will be turned OFF and the button will switch state",
+        "type": "integer",
+        "default": 500,
+        "required": true
+      },
+      "switchName": {
+        "title": "Switch Name",
+        "type": "string",
+        "required": false
+      },
+      "lightName": {
+        "title": "Light Name",
+        "type": "string",
+        "required": false
       }
     }
   }
