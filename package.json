@@ -1,5 +1,4 @@
 {
-  "private": true,
   "displayName": "Plugin Switch Button",
   "name": "homebridge-switch-button",
   "version": "1.0.0",
