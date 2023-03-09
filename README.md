@@ -3,6 +3,9 @@
 <img src="https://github.com/homebridge/branding/raw/master/logos/homebridge-wordmark-logo-vertical.png" width="150">
 </p>
 
+[![npm package](https://badgen.net/npm/v/homebridge-switch-button)](https://www.npmjs.com/package/homebridge-switch-button)
+[![Total downloads](https://badgen.net/npm/dt/homebridge-switch-button)](https://www.npmjs.com/package/homebridge-switch-button)
+[![Build and Lint](https://github.com/sant3001/homebridge-switch-button/actions/workflows/build.yml/badge.svg)](https://github.com/sant3001/homebridge-switch-button/actions/workflows/build.yml)
 
 # Homebridge Switch Button
 
