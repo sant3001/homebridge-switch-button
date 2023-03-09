@@ -1,4 +1,4 @@
-name: Build and Lint
+name: Build, Lint and Type check
 
 on: [push, pull_request]
 
@@ -24,6 +24,9 @@ jobs:
 
       - name: Lint the project
         run: npm run lint
+
+      - name: Check types
+        run: npm run typecheck
 
       - name: Build the project
         run: npm run build
