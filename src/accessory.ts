@@ -93,14 +93,15 @@ export class HomebridgeSwitchButtonAccessory implements AccessoryPlugin {
 
     if (on) {
       this.log.debug('Start switch timer');
+      // Flip the light bulb state
+      this.states.LightOn = !this.states.LightOn;
+      this.lightService.getCharacteristic(this.Characteristic.On).updateValue(this.states.LightOn);
+      this.log.debug('Switch timer completed, light is now ', this.states.LightOn? 'On' : 'Off');
+
       this.timer = setTimeout(() => {
         // Turn off the switch
         this.states.SwitchOn = false;
         this.switchService.getCharacteristic(this.Characteristic.On).updateValue(false);
-        // Flip the light bulb state
-        this.states.LightOn = !this.states.LightOn;
-        this.lightService.getCharacteristic(this.Characteristic.On).updateValue(this.states.LightOn);
-        this.log.debug('Switch timer completed, light is now ', this.states.LightOn? 'On' : 'Off');
       }, this.config.delay || 500);
     }
   }

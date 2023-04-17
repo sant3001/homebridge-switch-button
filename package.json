@@ -1,5 +1,5 @@
 {
-  "displayName": "Plugin Switch Button",
+  "displayName": "Homebridge Switch Button",
   "name": "homebridge-switch-button",
   "version": "1.0.1",
   "description": "Homebridge button and light switches for simple automations in Homekit. https://github.com/sant3001/homebridge-switch-button",
