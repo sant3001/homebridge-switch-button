@@ -3,6 +3,7 @@
 <img src="https://raw.githubusercontent.com/homebridge/branding/latest/logos/homebridge-wordmark-logo-vertical.png" width="150">
 </p>
 
+[![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
 [![npm package](https://badgen.net/npm/v/homebridge-switch-button)](https://www.npmjs.com/package/homebridge-switch-button)
 [![Total downloads](https://badgen.net/npm/dt/homebridge-switch-button)](https://www.npmjs.com/package/homebridge-switch-button)
 [![Build, Lint and Type check](https://github.com/sant3001/homebridge-switch-button/actions/workflows/build.yml/badge.svg)](https://github.com/sant3001/homebridge-switch-button/actions/workflows/build.yml)
@@ -34,3 +35,15 @@ By adding this plugin you can avoid converting your automation to Shorcuts and d
 3. Create a second automation to turn `OFF` your physical light when the light switch is turned `OFF`.
 
 Vualá! You're all set.
+
+## PRO tips - Recommended Home Configuration
+
+If you regularly use the Home app or Siri to turn on your lights, it's also best to replace the physical light with the virtual light so that the `ON/OFF` state is always managed by the virtual light. You can do so following these steps: 
+
+1. In the Home app, go to the light switch configuration and add it to the same room as the physical light. 
+2. Open to the room you added the light switch to.
+3. Go to your physical light configuration. Toggle `OFF` "Add to Home View", and toggle `OFF` "Include in Favorites". Rename this light to something different from the original name, i.e. "Physical Guest Room Light"
+4. Go to your light switch configuration and click in "Show as Separate Tiles" and close it. Now the virtual light and virtual switch should be displayed as separate tiles.  
+5. Go to the virtual light configuration. Toggle `ON` "Add to Home View" and (optionally) toggle `ON` "Include in Favorites". Rename this light to the original name of your physical light, i.e. "Guest Room Light".
+
+You should now see the virtual light in the Home dashboard.
